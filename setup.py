@@ -1,7 +1,7 @@
 #!/usr/bin/env python
 
 import sys
-from distutils.core import setup
+from setuptools import setup, find_packages
 from distutils.version import StrictVersion
 
 install_requires = [
@@ -355,7 +355,7 @@ def main():
         license='GPL',
         long_description=long_description,
         name='supriya',
-        packages=('supriya',),
+        packages=find_packages(exclude="tests"),
         url='https://github.com/Pulgama/supriya',
         version='0.1',
         zip_safe=False,
