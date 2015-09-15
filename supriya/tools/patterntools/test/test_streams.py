@@ -1,8 +1,7 @@
 import itertools as it
 
 import pytest
-
-from ..Stream import FuncStream, Routine
+from supriya.tools.patterntools.streams import FuncStream, Routine
 
 
 @pytest.mark.parametrize("func,args,expected", [
