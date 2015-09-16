@@ -6,7 +6,7 @@ from supriya.tools.patterntools.patterns.Pseq import Pseq
 from supriya.tools.patterntools.patterns.utils import NonSequenceStreamMixin
 
 
-class Prand(Pseq, NonSequenceStreamMixin):
+class Prand(NonSequenceStreamMixin, Pseq):
     """ chooses a random element from the sequence
 
     :param sequence: a sequence of values

@@ -4,7 +4,7 @@ from supriya.tools.patterntools.patterns._PatternBase import _PatternBase
 from supriya.tools.patterntools.patterns.utils import NonSequenceStreamMixin
 
 
-class Pfunc(_PatternBase, NonSequenceStreamMixin):
+class Pfunc(NonSequenceStreamMixin, _PatternBase):
     """ executes :param:function per iteration as a stream
 
     :param function: a function to execute per iterator

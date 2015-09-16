@@ -4,9 +4,10 @@ import random
 
 from supriya.tools.patterntools.patterns._PatternBase import _PatternBase
 from supriya.tools.patterntools.patterns.utils import NonSequenceStreamMixin
+from supriya.tools.patterntools import utils
 
 
-class Pbrown(_PatternBase, NonSequenceStreamMixin):
+class Pbrown(NonSequenceStreamMixin, _PatternBase):
     """
     """
     def __init__(self, low=0.0, high=1.0, step=0.125, **kwargs):

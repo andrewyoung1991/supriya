@@ -4,7 +4,7 @@ from supriya.tools.patterntools.patterns._PatternBase import _PatternBase
 from supriya.tools.patterntools.patterns.utils import NonSequenceStreamMixin
 
 
-class Pif(_PatternBase, NonSequenceStreamMixin):
+class Pif(NonSequenceStreamMixin, _PatternBase):
     """ evaluates :param:condition and returns the
     """
     def __init__(self, condition, if_true, if_false, default, **kwargs):

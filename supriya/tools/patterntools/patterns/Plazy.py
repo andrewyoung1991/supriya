@@ -4,7 +4,7 @@ from supriya.tools.patterntools.patterns._PatternBase import _PatternBase
 from supriya.tools.patterntools.patterns.utils import NonSequenceStreamMixin
 
 
-class Plazy(_PatternBase, NonSequenceStreamMixin):
+class Plazy(NonSequenceStreamMixin, _PatternBase):
     """ executes :param:function who's return type is a Pattern
 
     :param function: a function with the signature () -> Pattern

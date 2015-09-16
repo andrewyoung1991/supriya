@@ -6,7 +6,7 @@ from supriya.tools.patterntools.patterns._PatternBase import _PatternBase
 from supriya.tools.patterntools.patterns.utils import NonSequenceStreamMixin
 
 
-class Pgauss(_PatternBase, NonSequenceStreamMixin):
+class Pgauss(NonSequenceStreamMixin, _PatternBase):
     """ a basic random number generator
 
     :param mean: the mean value of the distrobution (mu)

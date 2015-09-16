@@ -15,9 +15,12 @@ class Pwrand(_BaseWeightedPattern):
     :returns: randomly selected elements from sequence
     """
     def get_sequence(self):
+        windexed = self.windex()
+        _, weights = list(zip(*windexed))
         def choose():
-            rand = random.random()
-            for index, weight in self.windex:
-                if rand < weight:
-                    return self.sequence[index]
+            rnd = random.random() * sum(weights)
+            for i, w in self.windex():
+                rnd -= w
+                if rnd < 0:
+                    return self.sequence[i]
         return choose

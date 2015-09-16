@@ -1,6 +1,6 @@
 """
 """
-from supriya.tools.patterntools.streams import Routine
+from supriya.tools.patterntools.streams import Routine, FuncStream
 from supriya.tools.patterntools import utils
 
 
